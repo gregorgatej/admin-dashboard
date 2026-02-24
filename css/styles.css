@@ -138,4 +138,131 @@ body {
 .main-content {
     grid-area: main-content;
     background-color: #f9fafb;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    grid-template-areas:
+        "projects announcements"
+        "projects trending";
+}
+
+.projects-section {
+    grid-area: projects;
+}
+
+.projects-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.project-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    border-left: 5px solid #facc15;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h4 {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.project-card p {
+    margin-bottom: 1rem;
+    color: #666;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    font-size: 1.2rem;
+}
+
+.announcements-section {
+    grid-area: announcements;
+}
+
+.announcements-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.announcements-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 1.5rem;
+}
+
+.announcement-item h4 {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.announcement-item p {
+    color: #666;
+    font-size: 0.85rem;
+    line-height: 1.4;
+}
+
+.announcement-item:not(:last-child) {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.trending-section {
+    grid-area: trending;
+}
+
+.trending-section h3 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.trending-container {
+    background-color: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 1.5rem;
+}
+
+.trending-item {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.trending-item img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.trending-item h4 {
+    margin-bottom: 0.25rem;
+    font-size: 0.95rem;
+    font-weight: bold;
+}
+
+.trending-item p {
+    color: #666;
+    font-size: 0.85rem;
 }
