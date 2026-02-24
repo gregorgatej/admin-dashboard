@@ -21,11 +21,118 @@ body {
 .sidebar {
     grid-area: sidebar;
     background-color: #1e40af;
+    color: white;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding: 1.5rem;
+    gap: 2rem;
+}
+
+.sidebar-branding h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.sidebar-nav ul {
+    list-style: none;
+    display: grid;
+    gap: 1rem;
+}
+
+.sidebar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.sidebar-nav a:hover {
+    opacity: 0.8;
 }
 
 .header {
     grid-area: header;
     background-color: #f3f4f6;
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 1.5rem;
+    gap: 1.5rem;
+}
+
+.header-top {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-search input {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.header-user-info {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.header-user-info img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-bottom {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 2rem;
+    align-items: center;
+}
+
+.header-greeting {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.header-greeting img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.header-greeting h2 {
+    font-size: 1.25rem;
+}
+
+.header-greeting p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.header-buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.header-buttons button {
+    padding: 0.5rem 1.5rem;
+    background-color: #0284c7;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.header-buttons button:hover {
+    background-color: #0369a1;
 }
 
 .main-content {
