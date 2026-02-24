@@ -11,7 +11,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: auto fr;
+    grid-template-rows: auto 1fr;
     height: 100vh;
     grid-template-areas: 
         "sidebar header"
@@ -53,14 +53,14 @@ body {
     grid-area: header;
     background-color: #f3f4f6;
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
     padding: 1.5rem;
     gap: 1.5rem;
 }
 
 .header-top {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
 }
@@ -88,7 +88,7 @@ body {
 
 .header-bottom {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 1fr 1fr;
     gap: 2rem;
     align-items: center;
 }
@@ -140,16 +140,13 @@ body {
     background-color: #f9fafb;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto auto;
     gap: 1.5rem;
     padding: 1.5rem;
-    grid-template-areas:
-        "projects announcements"
-        "projects trending";
 }
 
 .projects-section {
-    grid-area: projects;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .projects-section h3 {
@@ -190,8 +187,15 @@ body {
     font-size: 1.2rem;
 }
 
+.right-sidebar {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    gap: 1.5rem;
+}
+
 .announcements-section {
-    grid-area: announcements;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .announcements-section h3 {
@@ -226,7 +230,8 @@ body {
 }
 
 .trending-section {
-    grid-area: trending;
+    display: grid;
+    grid-template-rows: auto 1fr;
 }
 
 .trending-section h3 {
@@ -245,7 +250,7 @@ body {
 
 .trending-item {
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1rem;
     align-items: center;
 }
