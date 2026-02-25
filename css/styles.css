@@ -39,6 +39,11 @@ body {
     gap: 1rem;
 }
 
+.sidebar-nav ul:not(:last-child) {
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
 .sidebar-nav a {
     color: white;
     text-decoration: none;
