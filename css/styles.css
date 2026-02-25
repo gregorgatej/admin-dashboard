@@ -1,3 +1,8 @@
+:root {
+    --icon-width: 1.5rem;
+    --icon-height: 1.5rem;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -29,17 +34,32 @@ body {
 }
 
 .sidebar-branding {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
     padding-bottom: 2rem;
 }
 
+.sidebar-branding svg {
+    width: 4rem;
+    height: 4rem;
+    fill: white;
+}
+
 .sidebar-branding h1 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
 .sidebar-nav ul {
     list-style: none;
     display: grid;
+    gap: 1rem;
+}
+
+.sidebar-nav li {
+    display: flex;
+    align-items: center;
     gap: 1rem;
 }
 
@@ -51,11 +71,17 @@ body {
 .sidebar-nav a {
     color: white;
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 
 .sidebar-nav a:hover {
     opacity: 0.8;
+}
+
+.sidebar-nav img {
+    width: var(--icon-width);
+    height: var(--icon-height);
+    filter: brightness(0) invert(1);
 }
 
 .header {
@@ -74,6 +100,18 @@ body {
     align-items: center;
 }
 
+.header-search {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    align-content: center;
+}
+
+.header-search svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
 .header-search input {
     width: 100%;
     padding: 0.5rem;
@@ -83,10 +121,15 @@ body {
 }
 
 .header-user-info {
-    display: grid;
-    grid-template-columns: auto 1fr;
+    display: flex;
     gap: 0.5rem;
     align-items: center;
+    justify-content: center;
+}
+
+.header-user-info svg {
+    width: 1.5rem;
+    height: 1.5rem;
 }
 
 .header-user-info img {
