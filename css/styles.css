@@ -199,6 +199,12 @@ body {
     font-size: 1.2rem;
 }
 
+.card-actions svg {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
 .right-sidebar {
     display: grid;
     grid-template-rows: auto 1fr;
