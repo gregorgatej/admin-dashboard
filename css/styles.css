@@ -34,7 +34,8 @@ body {
 }
 
 .sidebar-branding {
-    display: flex;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
     align-items: center;
     gap: 1rem;
     padding-bottom: 2rem;
@@ -58,9 +59,11 @@ body {
 }
 
 .sidebar-nav li {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2rem 1fr;
     align-items: center;
     gap: 1rem;
+    padding-left: 1.25rem;
 }
 
 .sidebar-nav ul:not(:last-child) {
