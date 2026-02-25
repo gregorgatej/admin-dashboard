@@ -28,6 +28,10 @@ body {
     gap: 2rem;
 }
 
+.sidebar-branding {
+    padding-bottom: 2rem;
+}
+
 .sidebar-branding h1 {
     font-size: 1.5rem;
     font-weight: bold;
@@ -40,7 +44,7 @@ body {
 }
 
 .sidebar-nav ul:not(:last-child) {
-    padding-bottom: 1.5rem;
+    padding-bottom: 2.5rem;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
 }
 
